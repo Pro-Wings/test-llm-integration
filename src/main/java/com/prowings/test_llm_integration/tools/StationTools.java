@@ -42,12 +42,13 @@ public class StationTools {
     @Tool(
             name = "getStationStatus",
             description = """
-                    Look up a charging station by its station ID.
-                    Returns whether it exists, its name, available connector
-                    count, and price per kWh.
-                    Use this tool for questions about a specific station's
-                    availability or tariff.
-                    """,
+                Look up a charging station by its station ID.
+                Returns whether the station exists, its name,
+                available connector count, and current price per kWh.
+                Use this tool for station-specific availability or price.
+                It does not provide charging policies, vehicle compatibility,
+                waiting-time estimates, or reservations.
+                """,
             returnDirect = false
     )
     public StationStatus getStationStatus(

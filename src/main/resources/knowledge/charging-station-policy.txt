@@ -1,0 +1,35 @@
+CHARGING ACCESS POLICY
+A driver may start charging only when the station has an available connector
+and the vehicle is compatible with that connector.
+An available connector does not guarantee vehicle compatibility.
+Current connector availability must be obtained from the station status service.
+---
+CHARGING TARIFF POLICY
+The charging tariff is the station's current price per kWh.
+The applicable station tariff must be obtained from the station status service.
+This policy document does not contain station-specific charging prices.
+---
+IDLE PARKING POLICY
+After charging completes, the driver has a ten-minute grace period
+to disconnect the vehicle and vacate the charging bay.
+After the grace period, an idle parking fee of INR 2 per minute applies.
+The idle parking fee is separate from the charging energy cost.
+---
+UNAVAILABLE CONNECTOR POLICY
+If a station has zero available connectors, the driver cannot start charging
+immediately at that station.
+The driver should wait for a connector to become available or choose another station.
+This document does not provide waiting-time estimates.
+---
+CHARGING SESSION CANCELLATION POLICY
+A driver may cancel before energy delivery begins without a cancellation fee.
+After energy delivery begins, the driver must pay for the energy already delivered.
+---
+PAYMENT POLICY
+Supported payment methods are UPI and wallet.
+A payment receipt is generated after the charging session is settled.
+---
+STATION SUPPORT POLICY
+If a station is not found, the driver should verify the station ID.
+A missing station record must not be interpreted as zero available connectors.
+Vehicle compatibility and reservation availability are not provided by this policy document.

@@ -1,0 +1,27 @@
+COURSE DETAILS
+The sample Java Backend Development course lasts six months.
+It covers Core Java, Spring Boot, REST APIs, SQL, and introductory microservices.
+---
+CLASS SCHEDULE
+Classes take place Monday through Saturday.
+The class timing is 9:30 AM to 11:00 AM.
+Sunday is a weekly holiday.
+---
+CANCELLATION POLICY
+Students may cancel their enrollment within seven calendar days of enrollment.
+A processing fee of INR 500 is deducted from the refund.
+After seven calendar days, the course fee is non-refundable.
+---
+RECORDINGS
+Students receive access to class recordings.
+Recording access remains available for ninety days after course completion.
+---
+CERTIFICATE POLICY
+Students need at least eighty percent attendance and must complete the final project
+to receive a course completion certificate.
+---
+PAYMENT POLICY
+The sample course fee is INR 30000.
+Students may pay in three equal monthly installments of INR 10000.
+---
+Course Syllabus inculdes topics: Java Basics, Object-Oriented Programming, Exception Handling, Collections Framework, Java Streams, JDBC, Spring Boot Fundamentals, RESTful Web Services, SQL Queries, Database Design, and Introduction to Microservices Architecture.
