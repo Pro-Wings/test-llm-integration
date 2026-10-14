@@ -1,8 +1,11 @@
 package com.prowings.test_llm_integration.controller;
 
-import com.prowings.test_llm_integration.service.ChargingAssistantService;
-import com.prowings.test_llm_integration.service.ChargingAssistantService.ChargingAnswer;
+import java.util.List;
 
+import com.prowings.test_llm_integration.service.ChargingAssistantServiceWithRagAndMCP.ChargingAnswer;
+import com.prowings.test_llm_integration.service.ChargingAssistantServiceWithRagAndMCP.ToolInfo;
+
+import com.prowings.test_llm_integration.service.ChargingAssistantServiceWithRagAndMCP;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,16 +17,21 @@ import org.springframework.web.server.ResponseStatusException;
 @RequestMapping("/prowings/charging-assistant")
 public class ChargingAssistantController {
 
-    private final ChargingAssistantService assistantService;
+    private final ChargingAssistantServiceWithRagAndMCP assistantService;
 
     public ChargingAssistantController(
-            ChargingAssistantService assistantService) {
+            ChargingAssistantServiceWithRagAndMCP assistantService) {
 
         this.assistantService = assistantService;
     }
 
+    @GetMapping("/tools")
+    public List<ChargingAssistantServiceWithRagAndMCP.ToolInfo> tools() {
+        return assistantService.availableTools();
+    }
+
     @GetMapping("/ask")
-    public ChargingAnswer ask(
+    public ChargingAssistantServiceWithRagAndMCP.ChargingAnswer ask(
             @RequestParam("question") String question) {
 
         if (question.isBlank() || question.length() > 1000) {
